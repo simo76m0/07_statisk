@@ -24,7 +24,12 @@ h1 {
 }
 
 .pris {
+    text-align: left;
+}
+
+.discount_pris {
     font-size: 30px;
+    color: blue;
 }
 
 .purchase {

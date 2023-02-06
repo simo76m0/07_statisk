@@ -45,3 +45,30 @@
 .grid_1-1 img {
     width: 100%;
 }
+
+.sold_out::before {
+    content: "Sold out";
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.grid_1-1-1-1 article.sold_out img {
+    opacity: 0.5;
+}
+
+.grid_1-1-1-1 article.onSale .discounted {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid_1-1-1-1 article .discounted {
+    display: none;
+}
+
+.discounted .discount_rabat {
+    background-color: red;
+    padding: 0.2rem;
+}
