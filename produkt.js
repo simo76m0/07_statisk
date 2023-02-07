@@ -1,8 +1,14 @@
-const id = 1565;
+//lav url search objeckt
 
-const url = "https://kea-alt-del.dk/t7/api/products/1565";
+const urlParams = new URLSearchParams(window.location.search);
 
-const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/1565.webp`;
+//find id
+
+const id = urlParams.get("id");
+
+const url = `https://kea-alt-del.dk/t7/api/products/${id}`;
+
+const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
 
 function hentData() {
     fetch(url).then((klar) => klar.json()).then(visProdukt);
