@@ -15,6 +15,7 @@ function visProdukter(produkterJSON) {
     klon.querySelector(".titel").textContent = produkt.productdisplayname;
     klon.querySelector(".pris span").textContent = produkt.price;
     klon.querySelector(".discount_rabat span").textContent = produkt.discount;
+    klon.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp`;
 
     if (produkt.soldout) {
     klon.querySelector("article").classList.add("sold_out");
