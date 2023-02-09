@@ -3,9 +3,13 @@ p, a, h1 {
 }
 
 h3 {
+    display: block;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 35px;
     font-weight: 100;
+    background: #3D6375;
+    color: white;
+    padding: 10px;
 }
 
 h4 {
@@ -24,28 +28,65 @@ h1 {
 }
 
 .pris {
-    text-align: left;
+    text-align: center;
 }
 
 .discount_pris {
     font-size: 30px;
     color: blue;
+    text-align: center;
 }
 
 .purchase {
+    display: block;
+    font-size: 15px;
+}
+
+.purchase:hover {
+    display: block;
+    font-size: 15px;
     font-weight: bolder;
-    font-size: 25px;
+}
+
+header {
+    display: flex;
+}
+
+.kategori_header {
+    background-color: black;
+}
+
+header .nav_img {
+    display: flex;
+    width: 15%;
+    padding: 25px;
+}
+
+header .nav_liste {
+    display: flex;
+    background-color: black;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
+    float: right;
     padding: 25px;
     background-color: black;
 }
 
 nav a {
+    display: inline-block;
     color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 25px;
+    list-style: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
     text-decoration: none;
     list-style: none;
 }
@@ -63,12 +104,46 @@ nav a {
     color: black;
 }
 
+article {
+    border: 1px solid black;
+    text-align: center;
+}
+
 .col a {
     list-style-type: none;
     text-decoration: none;
     background-color: black;
-    border-radius: 10px;
     color: white;
     padding: 10px;
-    margin: 25px;
+    margin-top: 30px;
+}
+
+article img {
+    border-bottom: 1px solid black;
+}
+
+.forside_img {
+    background-image: url(../img/flat-lay-people-playing-paddle-tennis.jpg);
+    background-size: cover;
+}
+
+.kategori_img {
+    width: 100%;
+}
+
+footer {
+    font-family: serif;
+    font-size: 12px;
+    background: rgb(228, 228, 228);
+    text-align: center;
+    padding: 50px;
+}
+
+footer img {
+    width: 2.5%;
+    padding: 10px;
+}
+
+.produktliste_img {
+    width: 100%;
 }

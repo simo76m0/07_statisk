@@ -29,7 +29,7 @@ function visProdukter(produkterJSON) {
 if (produkt.discount) {
   klon.querySelector("article").classList.add("onSale");
   klon.querySelector(".pris span").style.textDecoration = "line-through";
-  klon.querySelector(".discounted_pris span").textContent = Math.round(produkt.price-(produkt.price/100)*produkt.discount);
+  klon.querySelector(".nu_pris span").textContent = Math.round(produkt.price - (produkt.price / 100) * produkt.discount);
 }
 
     beholder.appendChild(klon);

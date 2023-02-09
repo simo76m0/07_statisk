@@ -13,11 +13,15 @@
 .grid_1-1-1 a {
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 10px;
     padding: 50px;
-    background-color: rgb(219, 219, 219);
+    background-color: #3d6375;
     border-radius: 10px;
+}
+
+.grid_1-1-1 a:hover {
+    font-weight: bolder;
 }
 
 .grid_1-1-1-1 {
@@ -44,6 +48,7 @@
 
 .grid_1-1 img {
     width: 100%;
+    border: 1px solid black;
 }
 
 .sold_out::before {
@@ -59,16 +64,20 @@
     opacity: 0.5;
 }
 
-.grid_1-1-1-1 article.onSale .discounted {
+/* .grid_1-1-1-1 article.onSale .discounted {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .grid_1-1-1-1 article .discounted {
     display: none;
 }
 
 .discounted .discount_rabat {
-    background-color: red;
-    padding: 0.2rem;
+    color: #3D6375;
+    font-weight: bolder;
+}
+
+.kategori_img {
+    width: 100%;
 }

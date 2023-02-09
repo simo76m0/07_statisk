@@ -9,18 +9,16 @@
     <title>Produktliste</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Forside</a></li>
-          <li><a href="kategori.html">Kategori</a></li>
-          <li><a href="produktliste.html">Produktliste</a></li>
-          <li><a href="produkt.html">Produkt</a></li>
-        </ul>
-      </nav>
+    <header class="kategori_header">
+        <nav class="nav_liste">
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <h1>Produktliste</h1>
+      <img src="img/jordan-loritz-ekFi9O30bSo-unsplash.jpg" class="produktliste_img" alt="">
       <div id="beholder" class="grid_1-1-1-1">
       </div>
     </main>
@@ -29,14 +27,20 @@
       <article class="col">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/1555.webp" alt="Rød vandflaske" />
         <p class="titel">Vandflaske fra Quechua</p>
+        <p class="nu_pris"><span></span> DKK</p>
         <div class="discounted">
-        <p class="discounted_pris">NU: <span></span> DKK</p>
+        <!-- <p class="discounted_pris">NU: <span></span> DKK</p> -->
         <p class="discount_rabat"><span></span>%</p>
         </div>
-        <p class="pris">FØR: <span></span> DKK</p>
-        <a href="produkt.html" class="purchase">Køb nu</a>
+        <p class="pris"><span></span> DKK</p>
+        <a href="produkt.html" class="purchase">Read more</a>
       </article>
     </template>
     <script src="produktliste.js"></script>
+<footer>
+  <p>COMP SPORTS</p>
+  <img src="img/Copyright-Symbol-Transparent-Background-PNG.png" alt="">
+  <p>2023</p>
+</footer>
   </body>
 </html>
