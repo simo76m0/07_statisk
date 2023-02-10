@@ -16,8 +16,8 @@ function hentData() {
 
 function visProdukt(produkt){
     document.querySelector(".model").textContent = produkt.productdisplayname;
-    document.querySelector("img").src = imagePath;
-    document.querySelector("img").alt = produkt.productdisplayname;
+    document.querySelector("#produkt_img").src = imagePath;
+    document.querySelector("#produkt_img").alt = produkt.productdisplayname;
     document.querySelector(".farve").textContent = produkt.basecolour;
     document.querySelector(".brand").textContent = produkt.brandname;
 }
